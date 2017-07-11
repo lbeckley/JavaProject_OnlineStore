@@ -83,6 +83,8 @@ nav a:hover {
   background-color: #b2a295;
 }
 
+/****** Button ******/
+
 .hero-button {
   font-size: 1.2rem;
   font-family: 'Roboto Condensed', sans-serif;
@@ -101,11 +103,12 @@ nav a:hover {
 footer {
   background-color: #b2a295;
   color: #F2F2F2;
+  text-align: center;
 }
 
 /*****Layout******/
 
-.span_1_of_2 {
+.span_1 {
   width: 100%;
   float: right;
   padding: 0px 0px;
@@ -124,9 +127,24 @@ footer {
 
 /*****Media Queries******/
 
+@media(min-width: 414px) {
+
+  nav {
+    margin-top: 0rem;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  .wrap {
+    width: 100%;
+    margin: 0 auto;
+  }
+
 @media(min-width: 992px) {
 
-  .span_1_of_2 {
+  .span_1 {
     width: 50%;
   }
 
@@ -139,7 +157,7 @@ footer {
   }
 
   .wrap {
-    width: 970px;
+    width: 90%;
     margin: 0 auto;
   }
 
