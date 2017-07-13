@@ -118,7 +118,7 @@ nav a:hover {
   margin: 0;
   padding-right: 0;
   padding-left: 0;
-  padding-top: 2rem;
+  padding-top: 15%;
   padding-bottom: 0;
   list-style: none;
 }
@@ -132,10 +132,55 @@ nav a:hover {
 }
 
 #gallery li a p {
+  text-transform: uppercase;
   margin: 0;
   font-size: 1.2rem;
   color: #333333;
   text-align: center;
+}
+
+/****** Newsletter ******/
+
+#nwsltr {
+  padding-top: 5%;
+  float: left;
+  width: 85%;
+  margin: 7.5%;
+}
+
+.nwsltr-input {
+  min-width: 100%;
+  border: 1px solid #b2a295;
+  height: 40px;
+  padding: 8px;
+  margin: 0 0 10px 0;
+  font-size: 1rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.nwsltr-btn {
+  min-width: 100%;
+  border: none;
+  height: 40px;
+  background-color: #b2a295;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+}
+
+.nwsltr-btn:hover {
+  background-color: #333333;
+}
+
+.small-txt, .validation-message {
+  font-size: .8rem;
+}
+
+.validation-message {
+  color: #333333;
+  display: none;
+  margin: .5rem 0;
 }
 
 /*****Footer******/
@@ -144,7 +189,7 @@ footer {
   color: #333333;
   text-align: center;
   clear: both;
-  padding-top: 50px;
+  padding-top: 5%;
 }
 
 /*****Layout******/
@@ -191,6 +236,17 @@ footer {
     clear: left;
   }
 
+  .nwsltr-input {
+    min-width: 75%;
+    float: left;
+    overflow: hidden:
+  }
+
+  .nwsltr-btn {
+    min-width: 25%;
+    float: right;
+    overflow: hidden;
+  }
 
 @media(min-width: 1000px) {
 
@@ -210,3 +266,5 @@ footer {
     width: 90%;
     margin: 0 auto;
   }
+
+}
