@@ -18,9 +18,9 @@
 
     <!-- Header -->
         <section class="header">
-            <div class="wrap">
+            <div class="header_wrap">
                 <div class="row">
-                    <div class="span_1">
+                    <div class="span">
                         <nav id="main-nav" role="navigation">
                             <ul>
                                 <li><a href="#">Home</a></li>
@@ -42,7 +42,7 @@
     <!-- /Header -->
 
     <!-- Gallery -->
-    <div id="wrapper">
+    <div id="gallery_wrap">
       <section>
         <ul id="gallery">
           <li>
@@ -71,14 +71,19 @@
     <!-- Mail List -->
     <div id="nwsltr" class="nswltr">
          
-            <form action="index.html" method="post">
-                <input class="nwsltr-input" type="email" placeholder="Sign up to our mailing list" id="email-field">
-                <p class="validation-message" id="email-validation-message">Must be a valid email address.</p>
-                <button class="nwsltr-btn" id="email-submit" type="submit" >Subscribe</button>
+            <form action="/#my_contact_page" method="post">
+                <div>
+                    <p class="validation-message" id="email-validation-message">Must be a valid email address.</p>
+                </div>
+                <div>
+                    <input class="nwsltr-input" type="email" placeholder="Sign up to our mailing list" id="email-field">
+                </div>
+                <div>
+                    <button class="nwsltr-btn" id="email-submit" type="submit" >Subscribe</button>
+                </div>
             </form>
-
-        </div>
     </div>
+
     <!-- /Mail List -->
 
     <!-- Footer -->
@@ -91,7 +96,11 @@
 
 
     <!-- Insert JavaScript Here -->
-
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="js/email.js" type="text/javascript"></script>
 
 </body>
-</html>   
+</html>  
