@@ -30,6 +30,30 @@ h2 {
   font-size: 2rem;
 }
 
+h3 {
+  font-family: 'Sacramento', cursive;
+  font-size: 2.5rem;
+  color: #333333;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 1%;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border-top: 2px solid #333333;
+  width: 125px;
+}
+
+#desc {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333333;
+  text-align: center;
+}
+
 p {
   font-size: 1rem;
   line-height: 1.6;
@@ -59,8 +83,9 @@ p {
   color: #FFFFFF;
   text-align: center;
   text-shadow: 1px 1px 2px #333333;
-  margin-top: -30px;
+  margin-top: -35px;
   margin-bottom: 60px;
+  line-height: 1.5;
 }
 
 nav {
@@ -107,6 +132,13 @@ nav a:hover {
   clear: both;
 }
 
+.desc_wrap {
+  padding-top: 15%;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-bottom: 0;
+}
+
 /****** Button ******/
 .hero-button {
   font-size: 1.2rem;
@@ -133,7 +165,7 @@ nav a:hover {
   margin: 0;
   padding-right: 0;
   padding-left: 0;
-  padding-top: 15%;
+  padding-top: 0;
   padding-bottom: 0;
   list-style: none;
 }
@@ -213,7 +245,6 @@ footer {
 }
 
 /*****Media Queries******/
-
 @media(min-width: 600px) {
 
   nav ul li {
@@ -249,25 +280,6 @@ footer {
     overflow: hidden;
   }
 
-@media(min-width: 1000px) {
-
-  .span {
-    width: 25%;
-  }
-
-  nav {
-    margin-right: -5rem;
-  }
-
-  nav ul li {
-    display: inline-block;
-  }
-
-  .header_wrap {
-    width: 90%;
-    margin: 0 auto;
-  }
-
   #nwsltr {
     padding-top: 0;
   }
@@ -276,7 +288,7 @@ footer {
     padding-top: 1%;
   }
 
-  #gallery {
+  .desc_wrap {
     padding-top: 7.5%;
   }
 
