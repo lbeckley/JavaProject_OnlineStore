@@ -352,3 +352,31 @@ footer {
   }
 
 }
+
+@media(min-width: 1200px) {
+
+  nav {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 4.75rem;  
+  }
+
+  h1::first-letter {
+    font-size: 5.25rem;
+  }
+
+  #letter {
+    font-size: 5.25rem;  
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  #tagline {
+    margin-top: -35px;
+  }  
+
+}
