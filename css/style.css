@@ -1,9 +1,35 @@
 /****** Base ******/
+* {
+  box-sizing: border-box; 
+}
+
 body {
+  margin: 0; 
+  font-weight: 500;
   font-family: 'Roboto Condensed', sans-serif;
-  margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  padding: 0;
+  display: table;
+  margin: 0;
+  max-width: none;
+  height: 100vh;
+}
+
+.content_top {
+  display: table-row;
+  vertical-align: top;
+  height: 33.3%;
+}
+
+.content_middle {
+  display: table-row;
+  vertical-align: middle;
+  height: 66.6%;
 }
 
 a {
@@ -13,10 +39,6 @@ a {
 
 img {
   max-width: 100%;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 h1 {
@@ -46,14 +68,6 @@ hr {
   width: 125px;
 }
 
-#desc {
-  text-transform: uppercase;
-  margin: 0;
-  font-size: 1.1rem;
-  color: #333333;
-  text-align: center;
-}
-
 p {
   font-size: 1rem;
   line-height: 1.6;
@@ -62,13 +76,6 @@ p {
 }
 
 /****** Header ******/
-.header_wrap {
-  padding-top: 2rem;
-  padding-right: 2rem;
-  padding-left: 2rem;
-  padding-bottom: 4rem;
-}
-
 .header {
   background-image: url('../img/background.JPG');
   background-repeat: no-repeat;
@@ -77,9 +84,10 @@ p {
   color: #FFFFFF;
   text-align: center;
   text-shadow: 2px 2px 2px #333333;
+  height: 100vh;
 }
 
-.header2 {
+#tagline {
   color: #FFFFFF;
   text-align: center;
   text-shadow: 1px 1px 2px #333333;
@@ -114,31 +122,6 @@ nav a:hover {
   background-color: #b2a295;
 }
 
-/*****Layout******/
-.span {
-  width: 100%;
-  float: right;
-  padding: 0px 0px;
-}
-
-.row {
-  margin: 0px;
-  display: block;
-}
-
-.row:after {
-  content: " ";
-  display: table;
-  clear: both;
-}
-
-.desc_wrap {
-  padding-top: 15%;
-  padding-right: 10%;
-  padding-left: 10%;
-  padding-bottom: 0;
-}
-
 /****** Button ******/
 .hero-button {
   font-size: 1.2rem;
@@ -154,13 +137,38 @@ nav a:hover {
   border: 2px solid #b2a295;
 }
 
-/*****Gallery******/
-#gallery_wrap {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 5%;
+/***** Layout ******/
+.desc_wrap {
+  padding-top: 15%;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-bottom: 0;
 }
 
+.gallery_wrap {
+  overflow: hidden;
+  padding: 0;
+  margin-right: 7.5%;
+  margin-left: 7.5%;
+}
+
+.story_wrap {
+  padding-top: 0;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-bottom: 0;
+}
+
+/***** Description ******/
+#desc {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333333;
+  text-align: center;
+}
+
+/***** Gallery ******/
 #gallery {
   margin: 0;
   padding-right: 0;
@@ -189,6 +197,8 @@ nav a:hover {
 /****** Newsletter ******/
 #nwsltr {
   padding-top: 5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
   float: left;
   width: 85%;
   margin: 7.5%;
@@ -251,11 +261,6 @@ footer {
     display: inline-block;
   }
 
-  .header_wrap {
-    width: 100%;
-    margin: 0 auto;
-  }
-
   img {
     float: left;
   }
@@ -271,7 +276,7 @@ footer {
   .nwsltr-input, .validation-message {
     min-width: 75%;
     float: left;
-    overflow: hidden:
+    overflow: hidden;
   }
 
   .nwsltr-btn {
@@ -290,6 +295,10 @@ footer {
 
   .desc_wrap {
     padding-top: 7.5%;
+  }
+
+  .story_wrap {
+    padding-top: 1%;
   }
 
 }
