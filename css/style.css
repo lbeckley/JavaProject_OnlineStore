@@ -396,11 +396,11 @@ footer {
 
 @media(min-width: 1200px) {
 
-  #popup{
+#popup{
   margin-left: -125px; 
   margin-top: -125px; 
-  }
-  
+}
+
   nav {
     font-size: 1.5rem;
   }
