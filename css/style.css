@@ -397,18 +397,8 @@ footer {
 @media(min-width: 1200px) {
 
   #popup{
-  position: absolute;
-  width: 242px;
-  height: 205px;
-  background: #fff;
-  left: 50%;
-  top: 50%;
-  border-radius: 5px;
-  padding: 0;
   margin-left: -125px; 
-  margin-top: -150px; 
-  text-align: center;
-  box-shadow: 0 0 10px 0 #000;
+  margin-top: -175px; 
   }
   
   nav {
