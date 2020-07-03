@@ -140,6 +140,13 @@ p {
   height: 100vh;
 }
 
+.formheader {
+  color: #FFFFFF;
+  text-align: center;
+  text-shadow: 2px 2px 2px #333333;
+  height: 0vh;
+}
+
 #tagline {
   color: #FFFFFF;
   text-align: center;
@@ -422,3 +429,88 @@ footer {
 
 }
 
+/*****Form******/
+#join {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 400px;
+  /* Form outline */
+  padding: 1em 1em 5em 1em;
+  border: 1px solid #b2a295;
+  border-radius: 1em;
+}
+
+#join ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#join li + li {
+  margin-top: 1em;
+}
+
+#join label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 90px;
+  text-align: left;
+}
+
+.join-input, 
+.join-textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font-size: 1rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  /* Uniform text field size */
+  width: 366px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #b2a295;
+  padding: 8px;
+  margin: 0 0 10px 0;
+  outline: none;
+}
+
+.join-input:focus, 
+.join-textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #333333;
+}
+
+.join-textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+.join-btn {
+  /* Align buttons with the text fields */
+  padding-left: 0px; /* same size as the label elements */
+  min-width: 100%;
+  border: none;
+  height: 40px;
+  background-color: #b2a295;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+}
+
+.join-btn:disabled {
+  opacity: .5;
+}
+
+.join-btn:hover {
+  background-color: #333333;
+}
+
+.join-input, .validation-message {
+  min-width: 75%;
+  float: left;
+  overflow: hidden;
+}

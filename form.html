@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Roots</title>
+
+    <!-- Insert Style Sheet Here-->
+    <link rel = "stylesheet" type = "text/css" href = "css/normalize.css" />
+    <link rel = "stylesheet" type = "text/css" href = "css/style.css" />
+
+    <!-- Insert Google Fonts Here -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Sacramento" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <section class="formheader">  
+                <div class="content_top">
+                    <nav id="main-nav" role="navigation">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#collection">Shop</a></li>
+                            <li><a href="#story">Story</a></li>
+                            <li><a href="form.html">Join</a></li>
+                        </ul>
+                    </nav>
+                </div>
+    </section>
+    <!-- /Header -->
+
+    <!-- Form -->
+    <div id="story" class="desc_wrap">
+        <h3>Join</h3>
+    </div>
+        <hr/>
+    <div id="join">
+        <form action="/#my-form-page" method="post">
+            <ul>
+                <li>
+                    <label for="name">Name:</label>
+                    <input class="join-input" type="text" id="name" name="user_name" />
+                </li>
+                <li>
+                    <label for="mail">E-mail:</label>
+                    <div>                    
+                        <p class="validation-message" id="email-validation-message">Must be a valid email address.</p>
+                    </div>
+                    <input class="join-input" type="email" placeholder="" id="email-field" name="mail">
+                </li>
+                <li>
+                    <label for="msg">Message:</label>
+                    <textarea class="join-input" type="text" id="msg" name="user_message"></textarea>
+                </li>
+                <li class="join-btn">
+                    <button class="join-btn" type="submit" >Submit</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <!-- /Form -->
+
+    <!-- Insert JavaScript Here -->
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script src="js/email.js" type="text/javascript"></script>
+
+</body>
+</html>  
+
