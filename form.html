@@ -33,7 +33,7 @@
     <!-- /Header -->
 
     <!-- Form -->
-    <div id="story" class="desc_wrap">
+    <div>
         <h3>Join</h3>
     </div>
         <hr/>
@@ -45,22 +45,33 @@
                     <input class="join-input" type="text" id="name" name="user_name" />
                 </li>
                 <li>
-                    <label for="mail">E-mail:</label>
-                    <div>                    
-                        <p class="validation-message" id="email-validation-message">Must be a valid email address.</p>
-                    </div>
-                    <input class="join-input" type="email" placeholder="" id="email-field" name="mail">
+                    <label for="address">Address:</label>
+                    <input class="join-input" type="text" id="address" name="user_address" />
                 </li>
                 <li>
-                    <label for="msg">Message:</label>
-                    <textarea class="join-input" type="text" id="msg" name="user_message"></textarea>
+                    <label for="city">City:</label>
+                    <input class="join-input" type="text" id="city" name="user_city" />
                 </li>
+                <li>
+                    <label for="state">State:</label>
+                    <input class="join-input" type="text" id="state" name="user_state" />
+                </li>
+                <li>
+                    <label for="zip">Zipcode:</label>
+                    <input class="join-input" type="text" id="zip" name="user_zip" />
+                </li>
+                <li>
+                    <label for="mail">E-mail:</label>
+                    <input class="join-input" type="email" placeholder="" id="email-field" name="mail">
+                </li>
+                <li>&nbsp;</li>
                 <li class="join-btn">
                     <button class="join-btn" type="submit" >Submit</button>
                 </li>
             </ul>
         </form>
     </div>
+    &nbsp;
     <!-- /Form -->
 
     <!-- Insert JavaScript Here -->
