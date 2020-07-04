@@ -204,6 +204,11 @@ nav a:hover {
   padding-left: 10%;
   padding-bottom: 0;
 }
+
+.clock_wrap {
+  text-align: center; 
+  font-weight: 100; 
+}
  
 .gallery_wrap {
   overflow: hidden;
@@ -409,6 +414,38 @@ a img:hover {
   float: left;
   overflow: hidden;
 }
+
+/*****Countdown******/
+#clockdiv { 
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #333333; 
+  display: inline-block; 
+  font-weight: 100; 
+  text-align: center; 
+  font-size: 2em; 
+  padding-top: 1em;
+} 
+#clockdiv > div { 
+  padding: 10px; 
+  border-radius: 3px; 
+  background: #b2a295; 
+  display: inline-block; 
+  text-align: center; 
+} 
+#clockdiv div > span { 
+  padding: 15px; 
+  border-radius: 3px; 
+  background: #ffffff; 
+  display: inline-block; 
+  text-align: center; 
+} 
+
+.clocktext { 
+  padding-top: 5px; 
+  font-size: .5em; 
+  text-align: center; 
+  color: #ffffff;
+} 
 
 /*****Footer******/
 footer {

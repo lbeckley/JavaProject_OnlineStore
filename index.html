@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 </head>
 
-<body>
+<body class="clock_wrap">
 
     <!-- Popup -->
     <div id="hover"></div>
@@ -32,7 +32,7 @@
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="#collection">Shop</a></li>
-                            <li><a href="#story">Story</a></li>
+                            <li><a href="story.html">Story</a></li>
                             <li><a href="form.html">Join</a></li>
                         </ul>
                     </nav>
@@ -66,28 +66,40 @@
             </div>
     <!-- /Collection -->
 
-    <!-- Story -->
-    <div id="story" class="desc_wrap">
-                <h3>Our Story</h3>
-            </div>
-                <hr/>
-    <div class="story_wrap">
-    <p id="p_1" style="text-align:justify">After her daughter was born with a severe skin disorder in 2008, Meg DiMercurio sought out gentle and non-irritating skincare products for her, but struggled to find formulas that worked. So DiMercurio, the daughter of two microbiologists, began developing her own essential oils, soaps, salves, and lotions from scratch. In 2014, she opened her first ModernRoots retail space in Buffalo, Minnesota, and recently debuted a second storefront in Stillwater.</p> 
-
-    <p style="text-align:justify">Today, about 60 percent of her product line—spanning natural laundry detergent to tooth care—includes ingredients grown in the large garden behind her Annandale home, where she also raises farm animals such as hogs, pigs, turkeys, and goats.</p>
-
-    <p style="text-align:justify">With the addition of her Stillwater shop, she has sourced ingredients to reflect the region, including a moss resin shampoo and conditioner, made from moss and sap resin from the St. Croix region and an exfoliating soap made with sand from the shores of the St. Croix River.</p>
+    <!-- Countdown -->
+    <div class="desc_wrap">
+        <h3>Countdown to Summer Sale!</h3>
     </div>
-    <!-- Story -->
+        <hr/>
+    <div id="clockdiv" class="clock_wrap"> 
+        <div> 
+            <span class="days" id="day"></span> 
+            <div class="clocktext">Days</div> 
+        </div> 
+        <div> 
+            <span class="hours" id="hour"></span> 
+            <div class="clocktext">Hours</div> 
+        </div> 
+        <div> 
+            <span class="minutes" id="minute"></span> 
+            <div class="clocktext">Minutes</div> 
+        </div> 
+        <div> 
+            <span class="seconds" id="second"></span> 
+            <div class="clocktext">Seconds</div> 
+        </div> 
+    </div> 
+    <p id="demo"></p> 
+    <!-- /Countdown -->
 
     <!-- Mail List -->
     <div id="nwsltr">
             <form action="" method="post">
                 <div>
-                    <p class="validation-message" id="email-validation-message">Must be a valid email address.</p>
+                    <p style="text-align: left; padding-left: .5em;" class="validation-message" id="email-validation-message">Must be a valid email address.</p>
                 </div>
                 <div>
-                    <input class="nwsltr-input" type="email" placeholder="Sign up to our mailing list" id="email-field">
+                    <input class="nwsltr-input" type="email" placeholder="Sign up for Summer Sale email alerts!" id="email-field">
                 </div>
                 <div>
                     <button class="nwsltr-btn" id="email-submit" type="submit" >Subscribe</button>
@@ -106,6 +118,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/popup.js" type="text/javascript"></script>
     <script src="js/email.js" type="text/javascript"></script>
+    <script src="js/timer.js" type="text/javascript"></script>
 
 </body>
 </html>  
