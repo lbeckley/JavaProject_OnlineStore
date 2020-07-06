@@ -1,5 +1,15 @@
 //PHONE NUMBER 
-  $('#telephone').keyup(function(){
+$(document).ready(function(){
+    $('#submit').attr('disabled',true);
+    $('#name,#address,#city,#state,#zip,#telephone,#email-field').keyup(function(){
+        if($(this).val().length !=0)
+            $('#submit').attr('disabled', false);            
+        else
+            $('#submit').attr('disabled',true);
+    })
+});  
+
+$('#telephone').keyup(function(){
     if(this.value !== '' && !isValidPhoneNumber(this.value)) {
       $('#phone-validation-message').show();
       $('#submit').prop('disabled', true);
