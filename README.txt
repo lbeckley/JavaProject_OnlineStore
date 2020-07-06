@@ -10,3 +10,5 @@ On "Join" page:
 
 On "Home" page:
 3) Calculate and display data based on an external factor (ex: get the current date, and display how many days remaining until some event)
+
+Preview project in GitHub at this link: https://lbeckley.github.io/JavaProject_OnlineStore/index.html
