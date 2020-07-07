@@ -1,4 +1,4 @@
-//PHONE NUMBER 
+//NO BLANK FIELDS
 $(document).ready(function(){
     $('#submit').attr('disabled',true);
     $('#name,#address,#city,#state,#zip,#telephone,#email-field').keyup(function(){
@@ -9,6 +9,7 @@ $(document).ready(function(){
     })
 });  
 
+//PHONE NUMBER 
 $('#telephone').keyup(function(){
     if(this.value !== '' && !isValidPhoneNumber(this.value)) {
       $('#phone-validation-message').show();
@@ -50,6 +51,7 @@ $('#telephone').keyup(function(){
       return pattern.test(emailAddress);
   };
 
+  //SUBMIT FORM
   function SubForm (){
     $.ajax({
         url:'https://api.apispreadsheets.com/data/680/',
